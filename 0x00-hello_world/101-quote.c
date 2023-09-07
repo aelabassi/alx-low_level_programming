@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - printsa text to standard error
- * 
- * Return: returns 1
+ * main - prints a string into standard error
+ *
+ * Return: retuns 1
 */
 int main(void)
 {
