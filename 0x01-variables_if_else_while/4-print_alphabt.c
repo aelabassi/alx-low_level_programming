@@ -12,7 +12,7 @@ int main(void)
 
 	size_t i;
 
-	for (i = 0; strlen(alphabets); ++i)
+	for (i = 0; i < strlen(alphabets); ++i)
 	{
 		if (alphabets[i] != 'e' && alphabets[i] != 'q')
 		{
