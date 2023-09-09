@@ -14,7 +14,10 @@ int main(void)
 	for (i = 0; i < strlen(alphabets); ++i)
 	{
 		putchar(alphabets[i]);
+		
 	}
+
+	putchar('\n');
 
 	return (0);
 }
