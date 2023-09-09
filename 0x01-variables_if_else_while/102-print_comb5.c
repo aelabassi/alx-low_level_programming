@@ -13,7 +13,12 @@ int main(void)
 	{
 		for (j = i + 1; j < 100; j++)
 		{
-			if ((i % 10 != j / 10) || (i / 10 == j / 10 && i % 10 >= j % 10))
+			if (i == j)
+			{
+				continue;
+			}
+
+			if ((i % 10 > j % 10) || (i / 10 == j / 10 && i % 10 >= j % 10))
 			{
 				continue;
 			}
