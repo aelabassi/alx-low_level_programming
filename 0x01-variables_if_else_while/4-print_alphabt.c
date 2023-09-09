@@ -14,7 +14,7 @@ int main(void)
 
 	for (i = 0; strlen(alphabets); ++i)
 	{
-		if (alphabets[i] != 'q' && alphabets[i] != 'e')
+		if (alphabets[i] != 'e' && alphabets[i] != 'q')
 		{
 			putchar(alphabets[i]);
 		}
