@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 #include <string.h>
 
 /**
@@ -9,12 +8,12 @@
 */
 int main(void)
 {
-	char alphabets[] = "abcDefgHijkLmnopqrstvwxYZ";
+	char alphabets[] = "abcdefghijklmnopqrstvwxyz";
 	size_t i;
 
 	for (i = 0; i < strlen(alphabets); ++i)
 	{
-		putchar(alphabets[tolower(i)]);
+		putchar(alphabets[i]);
 	}
 
 	return (0);
