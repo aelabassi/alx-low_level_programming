@@ -8,11 +8,7 @@
  * _putchar - prints a string
  * @c: array of characters
 */
-void _putchar(char c[])
-{
-	printf("%s\n", c);
-
-}
+void _putchar(char c[]);
 
 
 
