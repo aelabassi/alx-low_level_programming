@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.c"
 #include <string.h>
 /**
  * main - prints _putchar
@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-	char p[7] = "_putchar";
+	char p[] = "_putchar";
 
 	_putchar(p);
 
