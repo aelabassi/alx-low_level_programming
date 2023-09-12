@@ -9,6 +9,6 @@
 */
 int _putchar(char c[])
 {
-	return (write(1, c, strlen(c)));
+	return (write(1, &c, strlen(c)));
 }
 
