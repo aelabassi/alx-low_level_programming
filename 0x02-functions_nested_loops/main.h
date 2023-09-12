@@ -40,4 +40,13 @@ int _islower(int c);
  * Return: return 1 if c is alphabetic, 0 otherwise
 */
 int _isalpha(int c);
+
+/**
+ * print_sign - check the sign of an integer
+ *@n: integer
+ *
+ * Return:  returns 1, 0, -1
+*/
+int print_sign(int n);
+
 #endif /* _MAIN_H */
