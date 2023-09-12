@@ -65,4 +65,9 @@ int _abs(int);
 */
 int print_last_digit(int);
 
+/**
+ * jack_bauer - prints the every of minute of JB
+*/
+void jack_bauer(void);
+
 #endif /* _MAIN_H */
