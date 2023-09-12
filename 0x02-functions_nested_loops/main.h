@@ -5,9 +5,9 @@
 
 /**
  * _putchar - prints a string
- * @c: string to be printed
+ * @c: array of characters
 */
-void _putchar(string c)
+void _putchar(char c[])
 {
 	printf("%s\n", c);
 
