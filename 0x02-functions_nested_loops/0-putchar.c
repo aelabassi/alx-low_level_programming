@@ -10,7 +10,12 @@ int main(void)
 {
 	char p[] = "_putchar";
 
-	_putchar(p);
+	size_t i;
+
+	for (i = 0; i < strlen(p); i++)
+	{
+		_putchar(p[i]);
+	}
 	putchar('\n');
 
 	return (0);

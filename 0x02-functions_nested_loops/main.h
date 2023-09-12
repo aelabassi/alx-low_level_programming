@@ -5,12 +5,13 @@
 #include <string.h>
 
 /**
- * _putchar - prints a string
- * @c: character to be printed
+ * _putchar - prints the characters of a string
+ * @c: charater to print
  *
- * Return: return 1 on success and -1 on error
+ * Return: returns 1 on success and -1 on error
 */
-int _putchar(char c[]);
+
+int _putchar(char c);
 
 
 

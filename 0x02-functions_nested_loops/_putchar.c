@@ -7,8 +7,8 @@
  *
  * Return: on sucess return 1, on error reurn -1
 */
-int _putchar(char c[])
+int _putchar(char c)
 {
-	return (write(1, &c, strlen(c)));
+	return (write(1, &c, 1));
 }
 
