@@ -1,11 +1,14 @@
+#include <unistd.h>
 #include "main.h"
 
 /**
  * _putchar - prints a string
- * @c: array of characters
+ * @c: character to print
+ *
+ * Return: on sucess return 1, on error reurn -1
 */
-void _putchar(char c[])
+int _putchar(char c[])
 {
-	printf("%s", c);
+	return (write(1, &c, 1));
 }
 

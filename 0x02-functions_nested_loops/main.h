@@ -6,9 +6,11 @@
 
 /**
  * _putchar - prints a string
- * @c: array of characters
+ * @c: character to be printed
+ *
+ * Return: return 1 on success and -1 on error
 */
-void _putchar(char c[]);
+int _putchar(char c[]);
 
 
 
