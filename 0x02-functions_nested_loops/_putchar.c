@@ -6,6 +6,6 @@
 */
 void _putchar(char c[])
 {
-	printf("%s", c);
+	putchar(c);
 }
 
