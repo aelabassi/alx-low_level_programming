@@ -31,6 +31,6 @@ void print_alphabet_x10(void);
  *
  * Return: 1 if the alphabet character is a lower case, 0 otherwise
 */
-int is_lower(int c);
+int _islower(int c);
 
 #endif /* _MAIN_H */
