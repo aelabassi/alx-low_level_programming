@@ -57,4 +57,12 @@ int print_sign(int n);
 */
 int _abs(int);
 
+/**
+ * print_last_digit - primts te last digit on an int
+ *@int: int to extract the last digit from
+ *
+ * Return: the last digit
+*/
+int print_last_digit(int);
+
 #endif /* _MAIN_H */
