@@ -25,5 +25,12 @@ void print_alphabet(void);
 
 void print_alphabet_x10(void);
 
+/**
+ * _islower - checks if the the character is lower case ASCII
+ * @c: integer, Dec representation fo an ASCII
+ *
+ * Return: 1 if the alphabet character is a lower case, 0 otherwise
+*/
+int is_lower(int c);
 
 #endif /* _MAIN_H */
