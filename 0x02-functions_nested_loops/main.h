@@ -1,13 +1,15 @@
 #ifndef _MAIN_H
 #define _MAIN_H
 
+#include <string.h>
+
 /**
  * _putchar - prints a string
- * @c: array of characters
+ * @c: string to be printed
 */
-void _putchar(char c[])
+void _putchar(string c)
 {
-	printf("%c\n", c);
+	printf("%s\n", c);
 
 }
 
