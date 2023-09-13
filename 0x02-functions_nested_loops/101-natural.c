@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - check the code
@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-	int  n;
+	int n;
 
 	int sum = 0;
 
@@ -18,7 +18,7 @@ int main(void)
 			sum += n;
 		}
 	}
+
 	printf("\n");
 	return (0);
 }
-
