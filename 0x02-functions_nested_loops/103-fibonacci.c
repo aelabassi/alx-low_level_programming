@@ -15,13 +15,14 @@ int main(void)
 	k = 2;
 	sum = 0;
 
-	for (i = 1; i <= 33; i++)
+	for (i = 1; i <= 33; ++i)
 	{
 		if ((j < 4000000) && (j % 2 == 0))
 		{
 			sum += j;
 		}
 		n = j + k;
+		j = k;
 		k = n;
 	}
 
