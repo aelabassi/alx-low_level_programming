@@ -2,7 +2,7 @@
 
 /**
  * print_number - print a digit number
- *"n: int
+ *@n: int
  */
 void print_number(int n)
 {
