@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _strchar - finds the first occurrence of the a charachter
+ * _strchr - finds the first occurrence of the a charachter
  * @s: pointer to char
  * @c: char
  * Return: pointer to char
 */
-char *_strchar(char *s, char c)
+char *_strchr(char *s, char c)
 {
 	while (*s != '\0')
 	{
@@ -21,6 +21,6 @@ char *_strchar(char *s, char c)
 		return (s);
 	}
 
-	return (0);
+	return (NULL);
 
 }
