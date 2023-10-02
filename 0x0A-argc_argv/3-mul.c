@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		printf("Must have 3 arguments!\n");
+		return (1);
 	}
 	n = atoi(argv[1]);
 	m = atoi(argv[2]);
