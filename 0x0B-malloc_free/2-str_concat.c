@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
  * str_concat - retuens a pointer should point to a newly
  * allocated space which contains s1 + s2
@@ -10,8 +10,9 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int i, j, k, len;
+	int i, len;
 	char *str;
+    int size1, size2;
 
 	if (s1 == NULL)
 	{
@@ -21,32 +22,30 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
+	size1 = strlen(s1);
+	size2 = strlen(s2);
 
-	for (i = 0; s1[i] != '\0'; i++)
-	{
-		for (j = 0; s2[j] != '\0'; j++)
-		{
-			str = malloc(sizeof(char) * (i + j + 1));
-		}
-	}
+
+	str = malloc(sizeof(char) * (size1 + size2) + 1);
+
 	if (str == NULL)
 	{
 		free(str);
 		return (NULL);
 	}
-	else
+	for (i = 0; i <= size1 + size2; i++)
 	{
-	k = i;
-	for (i = 0; i <= k; i++)
-	{
-		str[i] = s1[i];
+		if (i < size1)
+		{
+			str[i] = s1[i];
+		}
+		else
+		{
+			str[i] = s2[i - size1];
+		}
 	}
-	len = j;
-	for (j = 0; j <= len; k++, j++)
-	{
-		str[k] = s2[j];
-	}
-	}
+	str[i] = '\0';
+
 
 	return (str);
 
