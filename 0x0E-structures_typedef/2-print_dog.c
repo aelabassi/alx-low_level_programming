@@ -1,6 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * print_dog - print the attributes of struct dog
  * @d: struct
