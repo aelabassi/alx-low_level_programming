@@ -30,10 +30,10 @@ list_t *add_node_end(list_t **head, const char *str)
 	temp1->next = NULL;
 
 	if (*head == NULL)
-    {
+	{
 		*head = temp1;
 		return (temp1);
-    }
+	}
 
 	temp2 = *head;
 
