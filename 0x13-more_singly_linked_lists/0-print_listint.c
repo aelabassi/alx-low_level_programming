@@ -1,23 +1,21 @@
 #include "lists.h"
-#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * print_listint - prints all elments of a listint_t
- * @h: pointer to listint
+ * @h: pointer to const listint
  * Return: all elements, size_t type
 */
 
 size_t print_listint(const listint_t *h)
 {
 	unsigned int elem = 0;
-	const listint_t *tmp;
 
-	tmp = h;
-	while (tmp != NULL)
+	while (h != NULL)
 	{
-		printf("%d\n", tmp->n);
+		printf("%d\n", h->n);
 		elem++;
-		tmp = tmp->next;
+		h = h->next;
 	}
 
 	return (elem);
