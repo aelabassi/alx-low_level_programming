@@ -10,7 +10,6 @@
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *temp1, *temp2;
-	unsigned int len = 0;
 
 	temp1 = malloc(sizeof(listint_t));
 	if (temp1 == NULL)
