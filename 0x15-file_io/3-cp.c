@@ -9,7 +9,6 @@
 int main(int argc, char *argv[])
 {
 	int file_from, file_to, writeme, ff, ft;
-
 	char *buffer[BUFSIZ];
 
 	if (argc != 3)
