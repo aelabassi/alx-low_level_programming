@@ -7,7 +7,7 @@
  * @m: uint long
  * Return: uint
 */
-unsigned int flip_bits(unsigned int n, unsigned int m)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned int i, n_flips = 0;
 	unsigned long int j = sizeof(unsigned long int) * 8;
