@@ -1,3 +1,3 @@
 #!/bin/bash
- gcc -Wall -pedantic -Werror -Wextra -std=gnu89 $1 $2 -o $3
+ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 $1 $2 $3 -o $4
  
