@@ -10,6 +10,6 @@ size_t dlistint_len(const dlistint_t *h)
 	size_t size;
 
 	for (size = 0; h != NULL; size++)
-		h->next;
+		h = h->next;
 	return (size);
 }
