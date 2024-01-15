@@ -8,5 +8,7 @@
 */
 int div(int a, int b)
 {
-	return (a / b);
+	int res = (int)(a / b);
+
+	return (res);
 }
