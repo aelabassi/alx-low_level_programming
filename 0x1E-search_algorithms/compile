@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+
+red="\033[0;31m"
+green="\033[0;32m"
+
+test_file="$1"
+source_file="$2"
+output_file="$3"
+
+echo -e "compiling $source_file into $output_file tested by $test_file"
+
+gcc -Wall -Wextra -Werror -pedantic -std=gnu89 "$test_file" "$source_file" -o "$output_file"
+
+if [ $? -eq 0 ]; then
+    echo -e "${green}Compilation succeeded"
+
+else
+    echo -e "${red}Compilation failed"
+fi
