@@ -9,14 +9,40 @@ magenta="\033[0;35m"
 cyan="\033[0;36m"
 white="\033[0;37m"
 
-
-test_file="$1"
-source_file="$2"
-output_file="$3"
+flag="$1"
+test_file="$2"
+source_file="$3"
+output_file="$4"
 
 echo -e "compiling ${magenta}$source_file ${white}into ${cyan}$output_file ${white}tested by ${yellow}$test_file"
 
-gcc -Wall -Wextra -Werror -pedantic -std=gnu89 "$test_file" "$source_file" -o "$output_file"
+standard_compile()
+{
+    test_file="$1"
+    source_file="$2"
+    output_file="$3"
+
+    gcc -Wall -Wextra -Werror -pedantic -std=gnu89 "$test_file" "$source_file" -o "$output_file"
+}
+complete_compile()
+{
+    flag="$1"
+    test_file="$2"
+    source_file="$3"
+    output_file="$4"
+    gcc -Wall -Wextra -Werror -pedantic -std=gnu89 "${flag}" "$test_file" "$source_file" -o "$output_file"
+}
+
+if [ "$#" -eq 4 ]; then
+    echo -e "${yellow}Compiling with complete_compile"
+    complete_compile "$flag" "$test_file" "$source_file" "$output_file"
+else
+    echo -e "${yellow}Compiling with standard"
+    standard_compile "$test_file" "$source_file" "$output_file"
+
+fi
+
+
 
 if [ $? -eq 0 ]; then
     echo -e "${green}Compilation succeeded"
