@@ -36,7 +36,7 @@ complete_compile()
 if [ "$#" -eq 4 ]; then
     echo -e "${yellow}Compiling with complete_compile"
     complete_compile "$flag" "$test_file" "$source_file" "$output_file"
-else
+elif [ "$#" -eq 3 ]; then
     echo -e "${yellow}Compiling with standard"
     standard_compile "$test_file" "$source_file" "$output_file"
 
